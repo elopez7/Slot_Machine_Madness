@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".GameFragment">
+
+        <TextView
+            android:id="@+id/game_fragment_text_view_player_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/goldman"
+            android:text="@string/placeholder_player_name"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/game_fragment_text_view_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/goldman"
+            android:text="@string/placeholder_money"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/game_fragment_text_view_total_winnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/goldman"
+            android:text="@string/placeholder_money"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="56sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35000002" />
+
+        <TextView
+            android:id="@+id/game_fragment_text_view_spins_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/goldman"
+            android:text="@string/placeholder_spins_left"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:textSize="56sp"
+            app:layout_constraintBottom_toTopOf="@+id/game_fragment_text_view_total_winnings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/game_fragment_button_spin"
+            android:layout_width="210dp"
+            android:layout_height="94dp"
+            android:fontFamily="@font/goldman"
+            android:text="@string/game_fragment_button_spin"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_slot2"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/game_fragment_button_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_fragment_button_end"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_button_spin"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/game_fragment_button_bet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/game_fragment_button_bet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_button_spin" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/game_fragment_slot1"
+            android:name="com.example.slotmachinemadness.SlotFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_slot2"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_slot2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_slot2"
+            tools:layout="@layout/fragment_slot" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/game_fragment_slot2"
+            android:name="com.example.slotmachinemadness.SlotFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/game_fragment_slot3"
+            app:layout_constraintEnd_toStartOf="@+id/game_fragment_slot3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_slot1"
+            app:layout_constraintTop_toTopOf="@+id/game_fragment_slot3"
+            tools:layout="@layout/fragment_slot" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/game_fragment_slot3"
+            android:name="com.example.slotmachinemadness.SlotFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_fragment_slot2"
+            app:layout_constraintTop_toBottomOf="@+id/game_fragment_text_view_total_winnings"
+            tools:layout="@layout/fragment_slot" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

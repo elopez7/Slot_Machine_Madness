@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Slot Machine Madness</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_fragment_text_view_title">Slot Machine Madness!</string>
+    <string name="title_fragment_text_view_instructions">You start with a certain amount of fantasy money. Try your luck and spin to win!</string>
+    <string name="title_fragment_button_play">PLAY!</string>
+    <string name="game_fragment_button_bet">BET</string>
+    <string name="game_fragment_button_spin">SPIN!</string>
+    <string name="game_fragment_button_end">END</string>
+    <string name="score_fragment_text_view_congratulations">Thank for playing %s. Here is how much fantasy money you get!</string>
+    <string name="score_fragment_button_again">PLAY AGAIN!</string>
+    <string name="score_fragment_button_title">BACK TO TITLE</string>
+    <string name="placeholder_player_name">Name</string>
+    <string name="placeholder_money">$ %d</string>
+    <string name="title_fragment_icon_content_description">An image depicting the icon for this game.</string>
+    <string name="player_name_hint">ENTER YOUR NAME</string>
+    <string name="slot_content_description">Image depicting one of the available slots in the game</string>
+    <string name="button_gamble_text">GAMBLE YOUR WINNINGS!</string>
+    <string name="button_play_again">PLAY AGAIN!</string>
+    <string name="toast_name_empty_warning">Please enter your name.</string>
+    <string name="game_fragment_spins_left_text">"Spins"</string>
+    <string name="placeholder_spins_left">0</string>
+    <string name="insufficient_funds_warning">Not enough money!</string>
+    <string name="no_spins_left_text">There are no more spins left</string>
+</resources>

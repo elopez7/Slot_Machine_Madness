@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".ScoreFragment">
+
+        <ImageView
+            android:id="@+id/score_fragment_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/title_fragment_icon_content_description"
+            android:src="@drawable/ic_my_game_icon" />
+
+        <TextView
+            android:id="@+id/score_fragment_text_view_congratulations_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_fragment_text_view_congratulations"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/score_fragment_text_view_total_winnings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_money"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="56sp" />
+
+        <Button
+            android:id="@+id/score_fragment_button_gamble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_gamble_text" />
+
+        <Button
+            android:id="@+id/score_fragment_button_play_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:text="@string/button_play_again"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/score_fragment_button_back_to_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/score_fragment_button_title" />
+    </LinearLayout>
+</layout>

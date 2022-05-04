@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".TitleFragment" >
+
+        <TextView
+            android:id="@+id/title_fragment_text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/goldman"
+            android:text="@string/title_fragment_text_view_title"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/title_fragment_image_view_game_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:contentDescription="@string/title_fragment_icon_content_description"
+            android:src="@drawable/ic_my_game_icon" />
+
+        <EditText
+            android:id="@+id/title_fragment_edit_text_player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/goldman"
+            android:hint="@string/player_name_hint"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="#78909C"
+            android:textSize="24sp"
+            android:autofillHints="" />
+
+        <TextView
+            android:id="@+id/title_fragment_text_view_instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/goldman"
+            android:text="@string/title_fragment_text_view_instructions"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/title_frament_button_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/goldman"
+            android:text="@string/title_fragment_button_play"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+</layout>
